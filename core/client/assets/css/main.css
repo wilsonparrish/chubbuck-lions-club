@@ -1,0 +1,53 @@
+body {
+	box-sizing: border-box;
+}
+
+#headerLogo {
+	width: 13%;
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#splash {
+	width: 100%;
+	opacity: .35; 
+}
+
+h1 {
+	padding: 10px;
+}
+
+h3 {
+	padding: 10px;
+}
+
+#mainview {
+	padding: 10px;
+	color: black;
+}
+
+/* needs refactored out, this is for team management page*/
+
+.teamGrid {
+	border: 1px solid rgb(212,212,212);
+	height: 1000px;
+	width: 100%;
+}
+
+/* this is for 3on3 page */
+
+.teamSignupForm form {
+	border: 1px solid black; 
+	padding: 10px;
+}
+
+.teamSignupForm form input, .teamSignupForm form select {
+	margin: 3px;
+}
+
+#pay {
+	display: flex;
+	justify-content: center;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chubbuck Lions Club</title>
+    <link rel="shortcut icon" href="assets/images/lionlogo_2c.jpg">
+    <!-- BOOTSTRAP MAIN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- JOURNAL THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.css">
+    <!-- UI Grid-->
+    <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.20/ui-grid.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body ng-app="app">
+
+    <header>
+        <img id="headerLogo" src="assets/images/lionlogo_2c.jpg">
+        <img id="splash" src="assets/images/3on3splashimage.jpg">
+        <ng-include src="'shared/header/header.html'"></ng-include>
+    </header>
+
+    <!--<h1>Angular Template</h1>
+    <h3>App wired: {{ true }}</h3>-->
+   <div id="mainview" class="container" ui-view></div>
+            
+
+
+    <!-- Dependencies -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.js"></script>
+    <!-- UI-Grid -->
+    <script src="//cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.20/ui-grid.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+    <!-- Local Scripts -->
+    <script src="app.module.js"></script>
+    <script src="app.routes.js"></script>
+    <script src="components/home/home.client.controller.js"></script>
+    <script src="components/3on3-Tournament/3on3.client.controller.js"></script>
+    <script src="components/teamManagement/teamManagement.client.controller.js"></script>
+    <script src="services/teamData.client.service.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            <%=t itle %>
+        </title>
+    </head>
+
+    <body>
+        <% if ( userFullName ) { %>
+            <h2>Hello
+                <%=userFullName%>
+            </h2>
+            <a href="/signout">Sign out</a>
+            <% } else { %>
+                <a href="/signup">Signup</a>
+                <a href="/signin">Signin</a>
+                <% } %>
+                    <br>
+                    <img src="img/logo.png" alt="Logo">
+    </body>
+
+</html>
