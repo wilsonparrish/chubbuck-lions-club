@@ -2,9 +2,9 @@
     "use strict";
 
     angular.module('app')
-        .controller('teamManagementController', function ($scope, $timeout, teamDataService) {
+        .controller('scoresPageController', function ($scope, $timeout, teamDataService) {
             $scope.teamData = teamDataService.teamData;
-            $scope.gridOptions = { 
+            $scope.scoresGridOptions = { 
                 onRegisterApi: function(gridApi){
                     $scope.gridApi = gridApi;
                     gridApi.edit.on.afterCellEdit($scope, function(row, field, val){

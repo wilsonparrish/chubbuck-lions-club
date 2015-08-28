@@ -2,8 +2,8 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 var teamSchema = new Schema({
-  teamname: { type: String, lowercase: true },
-  company: { type: String, lowercase: true, maxlength: 20 },
+  teamname: { type: String },
+  company: { type: String },
   division: {
     type: String,
     enum: [
