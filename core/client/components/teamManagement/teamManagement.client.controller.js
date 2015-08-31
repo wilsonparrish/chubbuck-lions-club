@@ -3,7 +3,11 @@
 
     angular.module('app')
         .controller('teamManagementController', function ($scope, $timeout, teamDataService) {
-            $scope.teamData = teamDataService.teamData;
+ 
+            teamDataService.teamData().then(function(res){
+                $scope.teamData = res.data;
+            });
+            
             $scope.gridOptions = { 
                 onRegisterApi: function(gridApi){
                     $scope.gridApi = gridApi;

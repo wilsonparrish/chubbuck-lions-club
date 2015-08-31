@@ -25,6 +25,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>-->
       <ul class="nav navbar-nav navbar-right">
+        <li ng-show="!user"><a href='/signup'>Signup</a></li>
+        <li ng-show="!user"><a href='/signin'>Sign In</a></li>
         <li ng-show="!!user">Hello {{ user.username }}</li> <!-- Make this work -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Club Members<span class="caret"></span></a>
@@ -36,6 +38,8 @@
             <li><a href="#/3on3">Parrish 3-on-3</a></li>
             <li class="divider"></li>
             <li><a href="#/teamManagement">Team Management Page</a></li>
+            <li class="divider"></li>
+            <li><a href="#/scoresPage">Scores Page</a></li>
           </ul>
         </li>
       </ul>

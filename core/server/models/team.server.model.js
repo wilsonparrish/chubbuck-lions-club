@@ -101,10 +101,15 @@ var teamSchema = new Schema({
       'XXXL'
     ]
   },
+  // tournamentYear {
+  //   type: Date,
+  //   default: Date.getFullYear(); 
+  // },
   creationdate: {
     type: Date,
     default: Date.now
   }
+  
 });
 
 module.exports = mongoose.model('Team', teamSchema);
