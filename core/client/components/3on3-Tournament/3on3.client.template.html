@@ -71,14 +71,14 @@
 					<h2>Your Team</h2>
 					<form>
 						<legend>General</legend>
-						<input type="text" placeholder="Team Name" ng-model="newTeam.teamname">
-						<input type="text" placeholder="Company or Captain" ng-model="newTeam.company">
+						<input required type="text" placeholder="Team Name" ng-model="newTeam.teamname">
+						<input required type="text" placeholder="Company or Captain" ng-model="newTeam.company">
 						<br>
-						<input type="text" placeholder="Contact Number" ng-model="newTeam.companynum">
-						<input type="text" placeholder="Email" ng-model="newTeam.email">
+						<input required type="text" placeholder="Contact Number" ng-model="newTeam.companynum">
+						<input required type="text" placeholder="Email" ng-model="newTeam.email">
 						<br>
 						<span>Division:</span>
-						<select name="division" ng-model="newTeam.division">
+						<select required name="division" ng-model="newTeam.division">
 							<option value="preNBA" selected>pre-NBA (K-6th)</option>
 							<option value="Liam">Liam (7th-8th)</option>
 							<option value="Keegan">Keegan (9th-12th)</option>
@@ -90,7 +90,7 @@
 						<br>
 						<br>
 						<legend>Player Info</legend>
-						<input type="text" placeholder="Player 1" ng-model="newTeam.member1">
+						<input required type="text" placeholder="Player 1" ng-model="newTeam.member1">
 						<input type="text" placeholder="Email" ng-model="newTeam.player1email">
 						<select name="shirtsize1" ng-model="newTeam.shirtsize1">
 							<option value="YS" selected>Youth Small</option>
@@ -104,7 +104,7 @@
 							<option value="XXXL">XXX-Large</option>
 						</select>
 						<br>
-						<input type="text" placeholder="Player 2" ng-model="newTeam.member2">
+						<input required type="text" placeholder="Player 2" ng-model="newTeam.member2">
 						<input type="text" placeholder="Email" ng-model="newTeam.player2email">
 						<select name="shirtsize2" ng-model="newTeam.shirtsize2">
 							<option value="YS" selected>Youth Small</option>
@@ -118,7 +118,7 @@
 							<option value="XXXL">XXX-Large</option>
 						</select>
 						<br>
-						<input type="text" placeholder="Player 3" ng-model="newTeam.member3">
+						<input required type="text" placeholder="Player 3" ng-model="newTeam.member3">
 						<input type="text" placeholder="Email" ng-model="newTeam.player3email">
 						<select name="shirtsize3" ng-model="newTeam.shirtsize3">
 							<option value="YS" selected>Youth Small</option>
