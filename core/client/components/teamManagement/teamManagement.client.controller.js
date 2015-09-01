@@ -5,6 +5,7 @@
         .controller('teamManagementController', function ($scope, $timeout, teamDataService) {
  
             teamDataService.teamData().then(function(res){
+                console.log(res);
                 $scope.teamData = res.data;
             });
             
@@ -34,7 +35,7 @@
                     { field: 'shirtsize2', displayName: 'Shirt Size 2', width: '4%' },
                     { field: 'shirtsize3', displayName: 'Shirt Size 3', width: '4%' },
                     { field: 'shirtsize4', displayName: 'Shirt Size 4', width: '4%' },
-                    { field: 'playerlemail', displayName: 'P1 Email', width: '15%' },
+                    { field: 'player1email', displayName: 'P1 Email', width: '15%' },
                     { field: 'player2email', displayName: 'P2 Email', width: '15%' },
                     { field: 'player3email', displayName: 'P3 Email', width: '15%' },
                     { field: 'player4email', displayName: 'P4 Email', width: '15%' },
@@ -42,6 +43,7 @@
                 ]
             };
             $timeout(function(){
+                console.log($scope.teamData);
                 console.log($scope.gridApi)}, 1000);
         });
         
