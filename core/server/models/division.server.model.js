@@ -1,8 +1,8 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
-var scoreSchema = new Schema({
-   division: {
+var divisionSchema = new Schema({
+  name: {
     type: String,
     enum: [
       'preNBA',
@@ -15,13 +15,11 @@ var scoreSchema = new Schema({
     ],
     required: true
   },
-  court: { type: String },
-  official: { type: String },
-  
+  teamsIdArray: [{ type: Schema.Types.ObjectId, ref: 'Team' }],
   creationdate: {
     type: Date,
     default: Date.now
   }
 });
 
-module.exports = mongoose.model('Score', scoreSchema);
+module.exports = mongoose.model('Division', divisionSchema);

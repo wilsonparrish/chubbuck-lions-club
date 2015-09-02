@@ -19,7 +19,6 @@ var scoreSchema = new Schema({
   },
   court: { type: String },
   official: { type: String },
-  
   creationdate: {
     type: Date,
     default: Date.now

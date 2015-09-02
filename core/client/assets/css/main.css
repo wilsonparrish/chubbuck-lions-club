@@ -40,6 +40,8 @@ h3 {
 .teamSignupForm form {
 	border: 1px solid black; 
 	padding: 10px;
+	/*display: flex;
+	justify-content: center;*/
 }
 
 .teamSignupForm form input, .teamSignupForm form select {

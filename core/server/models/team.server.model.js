@@ -4,6 +4,7 @@ var mongoose = require('mongoose'),
 var teamSchema = new Schema({
   teamname: { type: String },
   company: { type: String },
+  // division: { type: Schema.Types.ObjectId, ref: 'Division' },
   division: {
     type: String,
     enum: [

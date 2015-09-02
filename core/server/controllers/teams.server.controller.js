@@ -12,7 +12,7 @@ exports.registerTeam = function (req, res) {
 };
 
 exports.getTeams = function (req, res) {
-	var teamData = Team.find(req.query)
+	Team.find(req.query) //.populate('division')
 	.exec(function(err, result) {
 		if (err) {
 			res.status(500).send(err);
