@@ -1,35 +1,17 @@
 <p>This is the Tournament Creation page</p>
 <!--<p>Test Data: {{ teamData }}</p>-->
 <h1>Make a Division</h1>
-<div class="row scoresEntryForm">
+<div class="row divisionCreationForm">
 	<div class="col-lg-6 col-lg-push-3 col-md-6 col-md-push-3">
-		<h2>Game Info</h2>
 		<form>
-			<span>Division:</span>
-			<select name="division" ng-model="newScore.division">
-				<option value="preNBA" selected>pre-NBA (K-6th)</option>
-				<option value="Liam">Liam (7th-8th)</option>
-				<option value="Keegan">Keegan (9th-12th)</option>
-				<option value="Competitive">Competitive (Open)</option>
-				<option value="Bill">Bill (all players 30+)</option>
-				<option value="Ross A">Ross A (Women 9th-12th)</option>
-				<option value="Ross B">Ross B (Women Open)</option>
-			</select>
+			<span>Division name:</span>&nbsp<input type="text" placeholder="Name" ng-model="newDiv.name">
 			<br>
 			<br>
-			<select ng-options="item.label for item in values track by item.id" ng-model="newScore.team1"></select>
-			<input type="text" placeholder="Team 1 Score" ng-model="newScore.team1Score">{{ newScore.team1WinLoss }}
-			<br>
-			<select ng-options="item.label for item in values track by item.id" ng-model="newScore.team2"></select>
-			<input type="text" placeholder="Team 2 Score" ng-model="newScore.team2Score">{{ newScore.team2WinLoss }}
-			
+			<span>Age group description:</span>&nbsp<input type="text" placeholder="Descrip." ng-model="newDiv.description">
 			<hr>
-			Court:<input type="text" placeholder="Enter Court" ng-model="newScore.court">
-			Official:<input type="text" placeholder="Enter Name" ng-model="newScore.official"> 
-			<br>
 			<br>
 			<div id="submit">
-				<button class="btn btn-success btn-lg" type="submit" ng-click="registerTeam()">Submit</button>
+				<button class="btn btn-success btn-lg" type="submit" ng-click="createDivision()">Submit</button>
 			</div>
 		</form>
 	</div>

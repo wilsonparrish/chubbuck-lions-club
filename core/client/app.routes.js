@@ -27,7 +27,7 @@
                     controller: 'teamManagementController'
                 })
                 .state('tournamentCreator', {
-                    url: 'tournamentCreator',
+                    url: '/tournamentCreator',
                     templateUrl: 'components/tournamentCreator/tournamentCreator.client.template.html',
                     controller: 'tournamentCreatorController'
                 })   

@@ -21,6 +21,11 @@
                 })  
             };
             
+            this.createDivision = function (newDiv) {
+                console.log(newDiv);
+                $http.post("/api/createDivision", newDiv).success(function(){ console.log("successfully created div")}).error(function(){ console.log("error while attempting to create div")});  
+            };
+            
         })
 
 } ());

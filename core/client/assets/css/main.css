@@ -74,3 +74,14 @@ h3 {
 	display: flex;
 	justify-content: center;
 }
+
+/* tournament page */
+
+.divisionCreationForm form {
+	border: 1px solid black; 
+	padding: 10px;
+}
+
+.divisionCreationForm form input, .divisionCreationForm form select {
+	margin: 3px;
+}

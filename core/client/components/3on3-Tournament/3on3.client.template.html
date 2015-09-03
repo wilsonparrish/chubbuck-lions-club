@@ -78,15 +78,8 @@
 						<input required type="text" placeholder="Email" ng-model="newTeam.email">
 						<br>
 						<span>Division:</span>
-						<select ng-options="division._id as division.name for division in divisions" required name="division" ng-model="newTeam.division">
-							<!--<option value="preNBA" selected>pre-NBA (K-6th)</option>
-							<option value="Liam">Liam (7th-8th)</option>
-							<option value="Keegan">Keegan (9th-12th)</option>
-							<option value="Competitive">Competitive (Open)</option>
-							<option value="Bill">Bill (all players 30+)</option>
-							<option value="Ross A">Ross A (Women 9th-12th)</option>
-							<option value="Ross B">Ross B (Women Open)</option>-->
-						</select>
+						<select ng-options="division as division.name for division in divisions" required name="division" ng-model="newTeam.division"></select>
+						<span>{{ newTeam.division.description }}</span>
 						<br>
 						<br>
 						<legend>Player Info</legend>
