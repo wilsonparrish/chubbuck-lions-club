@@ -16,6 +16,7 @@ var divisionSchema = new Schema({
     required: true
   },
   teamsIdArray: [{ type: Schema.Types.ObjectId, ref: 'Team' }],
+  gamesIdArray: [{ type: Schema.Types.ObjectId, ref: 'Game'}],
   creationdate: {
     type: Date,
     default: Date.now

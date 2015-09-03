@@ -14,6 +14,13 @@
                     return err;
                 });
             };
+            
+            this.getDivisions = function () {
+                return $http.get("/api/divisions").error(function (err){
+                    return err;
+                })  
+            };
+            
         })
 
 } ());

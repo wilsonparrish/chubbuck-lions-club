@@ -4,19 +4,19 @@ var mongoose = require('mongoose'),
 var teamSchema = new Schema({
   teamname: { type: String },
   company: { type: String },
-  // division: { type: Schema.Types.ObjectId, ref: 'Division' },
-  division: {
-    type: String,
-    enum: [
-      'preNBA',
-      'Liam',
-      'Keegan',
-      'Ross A',
-      'Ross B',
-      'Competitive',
-      'Bill'
-    ]
-  },
+  division: { type: Schema.Types.ObjectId, ref: 'Division' },
+  // division: {
+  //   type: String,
+  //   enum: [
+  //     'preNBA',
+  //     'Liam',
+  //     'Keegan',
+  //     'Ross A',
+  //     'Ross B',
+  //     'Competitive',
+  //     'Bill'
+  //   ]
+  // },
   companynum: { type: String, minlength: 7 },
   email: {
     type: String,
