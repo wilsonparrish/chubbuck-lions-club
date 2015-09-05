@@ -2,21 +2,25 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 var gameSchema = new Schema({
-  team1: { type: Schema.Types.ObjectId, ref: 'Team', required: true },   //these three need to be related to the team schema
-  team2: { type: Schema.Types.ObjectId, ref: 'Team', required: true },
-  division: {
-    type: String,
-    enum: [
-      'preNBA',
-      'Liam',
-      'Keegan',
-      'Ross A',
-      'Ross B',
-      'Competitive',
-      'Bill'
-    ],
-    required: true
+  team1: { 
+    id: {type: Schema.Types.ObjectId, ref: 'Team', required: true },
+    name: String,
+    wins: Number,
+    losses: Number,
+    ptsScored: Number,
+    ptsAgainst: Number
   },
+  team1score: { type: Number, required: true },
+  team2: { 
+    id: {type: Schema.Types.ObjectId, ref: 'Team', required: true },
+    name: String,
+    wins: Number,
+    losses: Number,
+    ptsScored: Number,
+    ptsAgainst: Number
+  },
+  team2score: { type: Number, required: true },
+  division: { type: Schema.Types.ObjectId, ref: 'Division' },
   court: { type: String },
   official: { type: String },
   creationdate: {

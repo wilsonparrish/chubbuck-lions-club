@@ -13,7 +13,9 @@ exports.createDivision = function (req, res) {
 };
 
 exports.getDivs = function (req, res) {
-	Division.find(req.query)   //.populate('teamsIdArray').populate('gamesIdArray')
+	Division.find(req.query)
+	.populate('teamsIdArray')
+	.populate('gamesIdArray')
 	.exec(function(err, result) {
 		if (err) {
 			res.status(500).send(err);

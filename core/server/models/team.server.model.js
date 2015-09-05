@@ -102,6 +102,10 @@ var teamSchema = new Schema({
       'XXXL'
     ]
   },
+  wins: Number,
+  losses: Number,
+  ptsScored: Number,
+  ptsAgainst: Number,
   // tournamentYear {
   //   type: Date,
   //   default: Date.getFullYear(); 

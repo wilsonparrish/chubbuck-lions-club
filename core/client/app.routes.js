@@ -34,7 +34,12 @@
                 .state('gamesPage', {
                     url: '/gamesPage',
                     templateUrl: 'components/gamesPage/gamesPage.client.template.html',
-                    controller: 'gamesPageController'
+                    controller: 'gamesPageController',
+                    resolve: {
+                        getDivisions: function(teamDataService){
+                            return teamDataService.getDivisions();
+                        }
+                    }
                 });
         });
 
