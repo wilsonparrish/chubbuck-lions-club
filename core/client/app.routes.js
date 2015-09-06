@@ -40,6 +40,16 @@
                             return teamDataService.getDivisions();
                         }
                     }
+                })
+                .state('standings', {
+                    url: '/standings',
+                    templateUrl: 'components/standings/standings.client.template.html',
+                    controller: 'standingsController',
+                    resolve: {
+                        getDivisions: function(teamDataService){
+                            return teamDataService.getDivisions();
+                        }
+                    }
                 });
         });
 

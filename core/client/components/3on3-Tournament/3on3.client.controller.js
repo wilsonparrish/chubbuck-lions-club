@@ -11,9 +11,10 @@
                 $scope.newTeam.ptsScored = 0;
                 $scope.newTeam.ptsAgainst = 0; 
                 teamDataService.registerTeam($scope.newTeam);
+                $scope.newTeam = {};
             };
             $scope.divisions = getDivisions.data;
-            console.log($scope.divisions);
+            // console.log($scope.divisions);
         });
 
 } ());
