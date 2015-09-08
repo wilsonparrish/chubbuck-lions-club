@@ -24,7 +24,7 @@
                 data: 'games',
                 height: '20px',
                 columnDefs: [
-                    { field: 'division', displayName: 'Division', width: '15%'},
+                    { field: 'division.name', displayName: 'Division', width: '15%'},
                     { field: 'team1.name', displayName: 'Team 1', width: '15%' },
                     { field: 'team1score', displayName: 'Team 1 Score', width: '6%'},
                     { field: 'team2.name', displayName: 'Team 2', width: '15%' },

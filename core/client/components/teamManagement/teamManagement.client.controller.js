@@ -24,7 +24,7 @@
                 columnDefs: [
                     { field: 'teamname', displayName: 'Team Name', width: '15%'},
                     { field: 'company', displayName: 'Company/Captain', width: '15%' },
-                    { field: 'division', displayName: 'Division', width: '6%'},
+                    { field: 'division.name', displayName: 'Division', width: '6%'},
                     { field: 'companynum', displayName: 'Contact #', width: '10%' },
                     { field: 'email', displayName: 'Email', width: '15%' },
                     { field: 'member1', displayName: 'Player 1', width: '12%' },

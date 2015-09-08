@@ -62,7 +62,7 @@ exports.addGame = function (req, res) {
 };
 
 exports.getGames = function (req, res) {
-	Game.find(req.query)
+	Game.find(req.query).populate('division')
 	.exec(function(err, result) {
 		if (err) {
 			res.status(500).send(err);
