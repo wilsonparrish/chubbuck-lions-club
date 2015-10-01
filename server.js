@@ -1,7 +1,7 @@
 /// <reference path="typings/node/node.d.ts"/>
 // setting the correct environmet
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 4999;
 
 // bringing the express and mongoose objects from config
 var mongoose = require('./core/server/config/mongoose'),
