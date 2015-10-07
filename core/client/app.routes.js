@@ -11,6 +11,8 @@
                     templateUrl: 'components/home/home.client.template.html',
                     controller: 'homeController'
                 })
+                
+                //Tournament management application 
                 .state('3on3-Tournament', {
                     url: '/3on3',
                     templateUrl: 'components/3on3-Tournament/3on3.client.template.html',
@@ -50,6 +52,25 @@
                             return teamDataService.getDivisions();
                         }
                     }
+                })
+                
+                //Member login/register routes
+                .state('login', {
+                    url: '/login',
+                    templateUrl: 'components/memberLogin/login.client.template.html',
+                    controller: 'loginController'                
+                })
+                
+                //Member forum routes
+                .state('forum', {
+                    url: '/forum',
+                    templateUrl: 'components/forum/forum.client.template.html',
+                    controller: 'forumController'                
+                })
+                .state('forum.thread', {
+                    url: '/forum/:id',
+                    templateUrl:'',
+                    controller:''                   
                 });
         });
 

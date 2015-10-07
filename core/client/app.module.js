@@ -6,8 +6,11 @@
         'ui.grid',
         'ui.grid.edit',
         'ui.router',
-        'ngSanitize'
-    ]);
-
+        'ngSanitize',
+        'ngCookies',
+        'firebase'
+    ]).constant('fb', {
+        url: "https://chubbuck-lions-forum.firebaseio.com/"
+    });
 
 } ());

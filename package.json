@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "angular-ui-grid": "^3.0.4",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
     "connect-flash": "^0.1.1",
