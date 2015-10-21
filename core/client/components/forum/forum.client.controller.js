@@ -2,19 +2,19 @@
     "use strict";
 
     angular.module('app')
-        .controller('forumController', function ($scope) {
-            $scope.newTeam = {};
-            $scope.registerTeam = function(){
-                $scope.newTeam.division = $scope.newTeam.division._id;
-                $scope.newTeam.wins = 0;
-                $scope.newTeam.losses = 0;
-                $scope.newTeam.ptsScored = 0;
-                $scope.newTeam.ptsAgainst = 0; 
-                teamDataService.registerTeam($scope.newTeam);
-                $scope.newTeam = {};
+        .controller('threadCtrl', function ($scope, threadRef, $firebaseObject, commentsRef, $firebaseArray) {
+            var thread = $firebaseObject(threadRef);
+
+            thread.$bindTo($scope, 'thread');
+
+            $scope.comments = $firebaseArray(commentsRef);
+
+            $scope.createComment = function (username, text) {
+                $scope.comments.$add({
+                    username: username,
+                    text: text
+                });
             };
-            $scope.divisions = getDivisions.data;
-            // console.log($scope.divisions);
         });
 
 } ());

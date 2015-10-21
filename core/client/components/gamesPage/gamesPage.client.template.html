@@ -11,15 +11,15 @@
 			<br>
 			<br>
 			<select ng-options="team as team.teamname for team in newGame.division.teamsIdArray" ng-model="newGame.team1"></select>
-			<input type="text" placeholder="Team 1 Score" ng-model="newGame.team1score">
+			<input class="form-control" type="text" placeholder="Team 1 Score" ng-model="newGame.team1score">
 			<!--{{ newGame.team1WinLoss }}-->
 			<br>
 			<select ng-options="team as team.teamname for team in newGame.division.teamsIdArray" ng-model="newGame.team2"></select>
-			<input type="text" placeholder="Team 2 Score" ng-model="newGame.team2score">
+			<input class="form-control" type="text" placeholder="Team 2 Score" ng-model="newGame.team2score">
 			<!--{{ newGame.team2WinLoss }}-->
 			<hr>
-			Court:<input type="text" placeholder="Enter Court" ng-model="newGame.court">
-			Official:<input type="text" placeholder="Enter Name" ng-model="newGame.official"> 
+			Court:<input class="form-control" type="text" placeholder="Enter Court" ng-model="newGame.court">
+			Official:<input class="form-control" type="text" placeholder="Enter Name" ng-model="newGame.official"> 
 			<br>
 			<br>
 			<div id="submit">

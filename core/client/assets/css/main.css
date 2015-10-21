@@ -27,6 +27,19 @@ h3 {
 	color: black;
 }
 
+/* Home Page Styles */
+
+
+/* Login page styles */
+.login {
+	margin: 5px;
+}
+
+.loginBtn {
+	margin-left: 40%;
+}
+
+
 /* needs refactored out, this is for team management page*/
 
 .teamGrid {
