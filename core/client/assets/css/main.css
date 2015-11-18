@@ -17,6 +17,9 @@ body {
 h1 {
 	padding: 10px;
 }
+.pageTitle{
+	text-align: center;
+}
 
 h3 {
 	padding: 10px;
@@ -39,6 +42,21 @@ h3 {
 	margin-left: 40%;
 }
 
+h2{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+.regBtn{
+	margin-left: 36%;
+}
+.registerBtn {
+	margin-left: 43%;
+}
+/*#reg {
+	border: 2px solid limegreen;
+}*/
 
 /* needs refactored out, this is for team management page*/
 
@@ -59,6 +77,12 @@ h3 {
 
 .teamSignupForm form input, .teamSignupForm form select {
 	margin: 3px;
+}
+
+.teamFormCol {
+	columns: 200px 2;
+	-webkit-columns: 200px 2;
+	-moz-colums: 200px 2;
 }
 
 #pay {
@@ -89,6 +113,7 @@ h3 {
 }
 
 /* tournament page */
+
 
 .divisionCreationForm form {
 	border: 1px solid black; 

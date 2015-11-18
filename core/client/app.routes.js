@@ -60,6 +60,11 @@
                     templateUrl: 'components/memberLogin/login.client.template.html',
                     controller: 'loginController'                
                 })
+                .state('register', {
+                    url: '/register',
+                    templateUrl: 'components/registerMember/register.client.template.html',
+                    controller: 'registerController'                
+                })
                 
                 //Member forum routes
                 .state('forum', {

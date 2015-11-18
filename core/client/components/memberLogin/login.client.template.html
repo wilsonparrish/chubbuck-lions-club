@@ -1,25 +1,17 @@
 <div class="row">
-	<div class="col-md-1"></div>
+	<div class="col-md-4"></div>
 	<div class="col-md-4">
-		<form ng-submit="createUser()">
-			<h2>Register</h2>
-			<!--<input class="form-control login" type="text" placeholder="first name" ng-model="newUser.firstName">-->
-			<!--<input class="form-control login" type="text" placeholder="last name" ng-model="newUser.lastName">-->
-			<input class="form-control login" type="text" placeholder="email" ng-model="newUser.email">
-			<input class="form-control login" type="text" placeholder="password"  ng-model="newUser.password">
-			<!--<span ng-hide="match">Passwords do not match</span>-->
-			<!--<input class="form-control login" type="text" placeholder="confirm password" ng-model="passwordMatch">-->
-			<button type="submit" class="btn btn-success btn-md loginBtn">Submit</button>
-		</form>
-	</div>
-	<div class="col-md-2"></div>
-	<div class="col-md-4">
+		<!--<h2 ui-sref="register" id="reg">Register</h2>
+		-->
+		<button ui-sref="register" type="submit" class="btn btn-success btn-lg regBtn">Register</button>
+		<br><br>
+		<p>or if you are already a member</p>
 		<form ng-submit="login()">
 			<h2>Login</h2>
 			<input class="form-control login" type="text" placeholder="email" ng-model="user.email">
-			<input class="form-control login" type="text" placeholder="password" ng-model="user.password">
+			<input class="form-control login" type="password" placeholder="password" ng-model="user.password">
 			<button type="submit" class="btn btn-success btn-md loginBtn">Submit</button>
 		</form>
 	</div>
-	<div class="col-md-1"></div>
+	<div class="col-md-4"></div>
 </div>

@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('app')
-        .controller('loginController', function ($scope, loginService, $firebaseAuth) {
+        .controller('registerController', function ($scope, loginService, $firebaseAuth) {
             
             var ref = new Firebase("https://chubbuck-lions-forum.firebaseio.com");
             var Auth = $firebaseAuth(ref);
