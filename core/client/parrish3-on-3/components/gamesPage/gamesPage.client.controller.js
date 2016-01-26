@@ -10,6 +10,7 @@
             });
             
             $scope.divisions = getDivisions.data;
+            console.log(getDivisions.data);
             
             $scope.gamesGridOptions = { 
                 onRegisterApi: function(gridApi){

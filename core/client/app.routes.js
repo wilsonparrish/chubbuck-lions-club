@@ -11,11 +11,16 @@
                     templateUrl: 'components/home/home.client.template.html',
                     controller: 'homeController'
                 })
+                    .state('sightAndHearing', {
+                    url: '/SandH',
+                    templateUrl: 'components/sightAndHearing/sightAndHearingTemplate.html',
+                    controller: 'sightAndHearingController'
+                })
                 
                 //Tournament management application 
                 .state('3on3-Tournament', {
                     url: '/3on3',
-                    templateUrl: 'components/3on3-Tournament/3on3.client.template.html',
+                    templateUrl: 'parrish3-on-3/components/3on3-Tournament/3on3.client.template.html',
                     controller: 'signup3on3Controller',
                     resolve: {
                         getDivisions: function(teamDataService){
@@ -25,17 +30,17 @@
                 })
                 .state('teamManagement', {
                     url: '/teamManagement',
-                    templateUrl: 'components/teamManagement/teamManagement.client.template.html',
+                    templateUrl: 'parrish3-on-3/components/teamManagement/teamManagement.client.template.html',
                     controller: 'teamManagementController'
                 })
                 .state('tournamentCreator', {
                     url: '/tournamentCreator',
-                    templateUrl: 'components/tournamentCreator/tournamentCreator.client.template.html',
+                    templateUrl: 'parrish3-on-3/components/tournamentCreator/tournamentCreator.client.template.html',
                     controller: 'tournamentCreatorController'
                 })   
                 .state('gamesPage', {
                     url: '/gamesPage',
-                    templateUrl: 'components/gamesPage/gamesPage.client.template.html',
+                    templateUrl: 'parrish3-on-3/components/gamesPage/gamesPage.client.template.html',
                     controller: 'gamesPageController',
                     resolve: {
                         getDivisions: function(teamDataService){
@@ -45,7 +50,7 @@
                 })
                 .state('standings', {
                     url: '/standings',
-                    templateUrl: 'components/standings/standings.client.template.html',
+                    templateUrl: 'parrish3-on-3/components/standings/standings.client.template.html',
                     controller: 'standingsController',
                     resolve: {
                         getDivisions: function(teamDataService){

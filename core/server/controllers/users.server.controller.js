@@ -20,7 +20,6 @@ module.exports = {
    
    getUser: function (req, res) {
       User.findById(req.params.userId)
-         .populate('parent.baby')
          .exec(function (err, user) {
             if (err) return res.status(500).send(err);
             else res.send(user);

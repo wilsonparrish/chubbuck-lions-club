@@ -1,5 +1,12 @@
+/* color theme: https://coolors.co/app/dad2d8-247ba0-f1a208-143642-ec9a29 */
+
 body {
 	box-sizing: border-box;
+}
+
+/* General theming styles */
+.btn-success{
+    background-color: #247BA0;
 }
 
 #headerLogo {
@@ -7,6 +14,7 @@ body {
 	position: absolute;
 	margin-top: 2%;
 	margin-left: 2%;
+    background-color: #DAD2D8;
 }
 
 #splash {
@@ -69,7 +77,7 @@ p{
 /* this is for 3on3 page */
 
 .teamSignupForm form {
-	border: 1px solid black; 
+	/*border: 1px solid black; */
 	padding: 10px;
 	/*display: flex;
 	justify-content: center;*/
@@ -77,6 +85,10 @@ p{
 
 .teamSignupForm form input, .teamSignupForm form select {
 	margin: 3px;
+}
+
+.teamSignupForm legend{ 
+    color: black;
 }
 
 .teamFormCol {
