@@ -5,9 +5,25 @@ body {
 }
 
 /* General theming styles */
+button:focus{
+    outline:none;
+}
 .btn-success{
     background-color: #247BA0;
+    border: #247BA0 1px solid;
 }
+.btn-success:hover{
+    background-color: #247;
+    background-color: #143642;
+}
+.button:active{
+    background-color: #143642;
+    color: black;
+}
+.btn-success:focus{
+    background-color: #143642;
+}
+
 
 #headerLogo {
 	width: 13%;
