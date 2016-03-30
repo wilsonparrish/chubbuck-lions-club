@@ -28,6 +28,11 @@
                         }
                     }
                 })
+                .state('3on3-ThankYou', {
+                    url: '/3on3ty',
+                    templateUrl: 'parrish3-on-3/components/3on3-Tournament/3on3thankYou.client.template.html',
+                    controller: 'signup3on3Controller'
+                })
                 .state('teamManagement', {
                     url: '/teamManagement',
                     templateUrl: 'parrish3-on-3/components/teamManagement/teamManagement.client.template.html',
