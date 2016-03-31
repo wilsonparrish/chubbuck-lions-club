@@ -1,4 +1,4 @@
-Hosted at chubbucklionsclub.herokuapp.com
+Hosted at "https://chubbucklionsclub.herokuapp.com".
 
 Fully wired MEAN sample app.
 Folders organized by feature.
