@@ -1,3 +1,5 @@
+Hosted at chubbucklionsclub.herokuapp.com
+
 Fully wired MEAN sample app.
 Folders organized by feature.
 Ready for (hopefully) painless deployment to Heroku.
